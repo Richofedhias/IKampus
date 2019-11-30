@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeAdmin.InputKampus">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/input_jenis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <Spinner
+            android:id="@+id/namaKampus1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_jenis"
+            />
+
+        <EditText
+            android:id="@+id/deskripsi_kampus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Deskripsi"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namaKampus1" />
+
+        <TextView
+            android:id="@+id/tVDeskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Deskripsi"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/deskripsi_kampus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/deskripsi_kampus" />
+
+        <EditText
+            android:id="@+id/lokasi_kampus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Lokasi"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi_kampus" />
+
+        <TextView
+            android:id="@+id/tVContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Contact Us"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/lokasi_kampus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lokasi_kampus"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <EditText
+            android:id="@+id/telp_kampus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="No. Telp"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lokasi_kampus" />
+
+        <EditText
+            android:id="@+id/email_kampus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telp_kampus" />
+
+        <Button
+            android:id="@+id/gambar_kampus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pilih Gambar"
+            app:layout_constraintStart_toStartOf="@+id/email_kampus"
+            app:layout_constraintTop_toBottomOf="@+id/email_kampus" />
+
+        <TextView
+            android:id="@+id/tVgambarKampus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Gambar"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gambar_kampus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/gambar_kampus" />
+
+        <ImageView
+            android:id="@+id/iVgambarKampus"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gambar_kampus"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ProgressBar
+            android:id="@+id/pb_kampus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iVgambarKampus"
+            />
+
+        <Button
+            android:id="@+id/btn_kampus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Simpan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pb_kampus" />
+
+        <Spinner
+            android:id="@+id/namaKampus2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_jenis"
+            />
+
+        <TextView
+            android:id="@+id/tVnamaBeasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Nama"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/nama_beasiswa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nama_beasiswa" />
+
+        <EditText
+            android:id="@+id/nama_beasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Nama Beasiswa"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namaKampus2" />
+
+        <TextView
+            android:id="@+id/tVdeskripsi_beasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Deskripsi"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/deskripsi_beasiswa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/deskripsi_beasiswa"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <EditText
+            android:id="@+id/deskripsi_beasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Deskripsi"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nama_beasiswa" />
+
+        <TextView
+            android:id="@+id/tVjenis_beasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Jenis"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/jenis_beasiswa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/jenis_beasiswa"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Spinner
+            android:id="@+id/jenis_beasiswa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/deskripsi_beasiswa"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi_beasiswa" />
+
+        <TextView
+            android:id="@+id/tVtanggalBeasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Tanggal"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tanggal_beasiswa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tanggal_beasiswa"
+            app:layout_constraintVertical_bias="0.142" />
+
+        <EditText
+            android:id="@+id/tanggal_beasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="HH/BB/TTTT"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jenis_beasiswa" />
+
+        <Button
+            android:id="@+id/pilihgambarBeasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pilih Gambar"
+            app:layout_constraintStart_toStartOf="@+id/tanggal_beasiswa"
+            app:layout_constraintTop_toBottomOf="@+id/waktu_tes" />
+
+        <TextView
+            android:id="@+id/tVgambarBeasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Gambar"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pilihgambarBeasiswa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pilihgambarBeasiswa" />
+
+        <ImageView
+            android:id="@+id/iVgambarBeasiswa"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pilihgambarBeasiswa"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ProgressBar
+            android:id="@+id/pb_beasiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iVgambarBeasiswa"
+            />
+
+        <Button
+            android:id="@+id/btn_beasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Simpan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pb_beasiswa" />
+
+        <EditText
+            android:id="@+id/tanggal_akhir_beasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="HH/BB/TTTT"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tVsampai" />
+
+        <TextView
+            android:id="@+id/tVsampai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sampai"
+            app:layout_constraintEnd_toEndOf="@+id/tanggal_beasiswa"
+            app:layout_constraintStart_toStartOf="@+id/tanggal_beasiswa"
+            app:layout_constraintTop_toBottomOf="@+id/tanggal_beasiswa" />
+
+        <EditText
+            android:id="@+id/waktu_tes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Waktu Tes"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tanggal_akhir_beasiswa" />
+
+        <TextView
+            android:id="@+id/tVwaktutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Waktu Tes"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/waktu_tes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/waktu_tes" />
+
+        <Spinner
+            android:id="@+id/namaKampus3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_jenis" />
+
+        <EditText
+            android:id="@+id/nama_prodi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Nama Prodi"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namaKampus3" />
+
+        <TextView
+            android:id="@+id/tVnamaProdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Nama Prodi"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/nama_prodi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nama_prodi"
+            app:layout_constraintVertical_bias="0.476" />
+
+        <EditText
+            android:id="@+id/deskrispi_prodi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Deskripsi"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nama_prodi" />
+
+        <TextView
+            android:id="@+id/tVDeskripsiProdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Deskrispi"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/deskrispi_prodi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/deskrispi_prodi"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <Button
+            android:id="@+id/gambar_prodi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pilih Gambar"
+            app:layout_constraintStart_toStartOf="@+id/akreditasi_prodi"
+            app:layout_constraintTop_toBottomOf="@+id/akreditasi_prodi" />
+
+        <TextView
+            android:id="@+id/tVgambarProdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Pilih Gambar"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gambar_prodi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/gambar_prodi" />
+
+        <Button
+            android:id="@+id/btn_prodi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Simpan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pb_prodi" />
+
+        <TextView
+            android:id="@+id/tVakreditasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Akreditasi"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/akreditasi_prodi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/akreditasi_prodi" />
+
+        <EditText
+            android:id="@+id/akreditasi_prodi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Akreditasi"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deskrispi_prodi" />
+
+        <ImageView
+            android:id="@+id/iVgambarProdi"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gambar_prodi"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ProgressBar
+            android:id="@+id/pb_prodi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iVgambarProdi" />
+
+        <Spinner
+            android:id="@+id/namaKampus4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_jenis" />
+
+        <TextView
+            android:id="@+id/tVDeskripsiUKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Deskrispi"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/nama_UKM"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nama_UKM"
+            app:layout_constraintVertical_bias="0.476" />
+
+        <EditText
+            android:id="@+id/nama_UKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Deskripsi UKM"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namaKampus4" />
+
+        <EditText
+            android:id="@+id/deskripsi_UKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Nama UKM"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nama_UKM" />
+
+        <TextView
+            android:id="@+id/tVnamaUKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Nama UKM"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/deskripsi_UKM"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/deskripsi_UKM"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <Button
+            android:id="@+id/gambar_UKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pilih Gambar"
+            app:layout_constraintStart_toStartOf="@+id/deskripsi_UKM"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi_UKM" />
+
+        <TextView
+            android:id="@+id/tVgambarUKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Pilih Gambar"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gambar_UKM"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/gambar_UKM" />
+
+        <ImageView
+            android:id="@+id/iVgambarUKM"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gambar_UKM"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ProgressBar
+            android:id="@+id/pb_UKM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iVgambarUKM"
+            />
+
+        <Button
+            android:id="@+id/btn_UKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Simpan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pb_UKM" />
+
+        <Spinner
+            android:id="@+id/namaKampus5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_jenis" />
+
+        <TextView
+            android:id="@+id/tVpresentase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Presentase"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/input_presentase"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/input_presentase"
+            app:layout_constraintVertical_bias="0.476" />
+
+        <EditText
+            android:id="@+id/input_presentase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Presentase"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namaKampus5" />
+
+        <Spinner
+            android:id="@+id/fakultas_presentase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/input_presentase"
+            app:layout_constraintTop_toBottomOf="@+id/input_presentase" />
+
+        <TextView
+            android:id="@+id/tVfakultas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Fakultas"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fakultas_presentase"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fakultas_presentase"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ProgressBar
+            android:id="@+id/pb_Presentase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tVfakultas"
+            />
+
+        <Button
+            android:id="@+id/btn_presentase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Simpan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pb_Presentase"
+            app:layout_constraintVertical_bias="0.479" />
+
+        <EditText
+            android:id="@+id/input_soal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Soal"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_jenis" />
+
+        <TextView
+            android:id="@+id/soalKuesionerPenj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Soal"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/input_soal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/input_soal" />
+
+        <EditText
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Opsi A"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_soal" />
+
+        <TextView
+            android:id="@+id/tVjawabanA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Opsi A"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/a" />
+
+        <EditText
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Opsi B"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a" />
+
+        <TextView
+            android:id="@+id/tVjawabanB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Opsi B"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/b"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/b" />
+
+        <EditText
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Opsi C"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/b" />
+
+        <TextView
+            android:id="@+id/tVjawabanC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Opsi C"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/c"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/c" />
+
+        <EditText
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Opsi D"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c" />
+
+        <TextView
+            android:id="@+id/tVjawabanD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Opsi D"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/d"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/d" />
+
+        <EditText
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Opsi E"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d" />
+
+        <TextView
+            android:id="@+id/tVjawabanE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Opsi E"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/e"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/e" />
+
+        <Button
+            android:id="@+id/pilih_gambar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pilih Gambar"
+            app:layout_constraintStart_toStartOf="@+id/e"
+            app:layout_constraintTop_toBottomOf="@+id/e" />
+
+        <TextView
+            android:id="@+id/tVgambar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Gambar\n(Jika Ada)"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pilih_gambar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pilih_gambar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/iVgambarLatihanSoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pilih_gambar" />
+
+        <Button
+            android:id="@+id/btn_latihanSoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Simpan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pb_LatihanSoal" />
+
+        <EditText
+            android:id="@+id/jawaban_benar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Jawaban Yang Benar"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iVgambarLatihanSoal" />
+
+        <TextView
+            android:id="@+id/tVjawabanBenar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Jawaban"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/jawaban_benar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/jawaban_benar" />
+
+
+        <ProgressBar
+            android:id="@+id/pb_LatihanSoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jawaban_benar"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

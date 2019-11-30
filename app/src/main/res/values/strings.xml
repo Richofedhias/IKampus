@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">I-Kampus</string>
+    <string name="facebook_app_id">2236098599770438</string>
+    <string name="fb_login_protocol_scheme">fb2236098599770438</string>
+
+    <string-array name="Provinsi">
+        <item>Jawa Timur</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Barat</item>
+        <item>Jakarta</item>
+
+    </string-array>
+
+    <string-array name="JawaBarat">
+        <item>Bandung</item>
+        <item>Ciamis</item>
+        <item>Cimahi</item>
+    </string-array>
+
+    <string-array name="KampusBandung">
+        <item>Telkom University</item>
+        <item>Institut Teknologi Bandung</item>
+        <item>UPI</item>
+    </string-array>
+
+
+    <string-array name="beasiswa">
+        <item>--Pilih Kategori--</item>
+        <item>Internal</item>
+        <item>Eksternal</item>
+    </string-array>
+
+    <string-array name="jenis_input_kampus">
+        <item>Kampus</item>
+        <item>Beasiswa</item>
+        <item>Prodi</item>
+        <item>UKM</item>
+        <item>Presentase</item>
+        <item>Latihan Soal</item>
+    </string-array>
+
+    <string-array name="fakultas">
+        <item>Pilih Fakultas</item>
+        <item>Fakultas Ilmu Terapan</item>
+        <item>Fakultas Teknik Elektro</item>
+        <item>Fakultas Industri Kreatif</item>
+        <item>Fakultas Informatika</item>
+        <item>Fakultas Ekonomi dan Bisnis</item>
+        <item>Fakultas Komunikasi dan Bisnis</item>
+        <item>Fakultas Rekayasa Industri</item>
+    </string-array>
+
+    <string-array name="presentase">
+        <item>Pilih Fakultas</item>
+        <item>Fakultas Ilmu Terapan</item>
+        <item>Fakultas Teknik Elektro</item>
+        <item>Fakultas Industri Kreatif</item>
+        <item>Fakultas Informatika</item>
+        <item>Fakultas Ekonomi dan Bisnis</item>
+        <item>Fakultas Komunikasi dan Bisnis</item>
+        <item>Fakultas Rekayasa Industri</item>
+    </string-array>
+
+    <string-array name="unpad_presentase">
+        <item>Fakultas Hukum</item>
+        <item>Fakultas Ekonomi dan Bisnis</item>
+        <item>Fakultas Kedokteran</item>
+        <item>Fakultas Matematika dan Ilmu Pengetahuan Alam</item>
+        <item>Fakultas Pertanian</item>
+        <item>Fakultas Kedokteran Gigi</item>
+        <item>Fakultas Ilmu Budaya</item>
+        <item>Fakultas Ilmu Sosial dan Ilmu Politik</item>
+        <item>Fakultas Psikologi</item>
+        <item>Fakultas Ilmu Komunikasi</item>
+        <item>Fakultas Keperawatan</item>
+        <item>Fakultas Perikanan dan Ilmu Kelautan</item>
+        <item>Fakultas Teknologi Industri Pertanian</item>
+        <item>Fakultas Farmasi</item>
+        <item>Fakultas Teknik Geologi</item>
+        <item>Fakultas Peternakan</item>
+        <item>Pascasarjana</item>
+    </string-array>
+
+    <string name="Deskripsi">Telkom University is one of the biggest and most modern private universities in Indonesia. Fast growth of ICT  (Information and Communication Technology) combined with the cultural diversity of Indonesia leads Telkom University to focus on ICT-based education and research in the field of engineering, business, and creative industry. Telkom University was launched on 14th August 2013, a merger of four higher education institutions belonging to PT Telekomunikasi Indonesia Tbk, which is the biggest telecommunication corporate owned by Indonesia Government. The grand launching was held on 31st August 2013 by the Minister of Education and Culture – Professor Mohammad Nuh, the CEO of Telkom Group – Dr. Arief Yahya, and the Chairman of Telkom Foundation – Johni Girsang, M.Sc.
+</string>
+    <string name="Contact">Gedung Bangkit Telkom University
+Jl. Telekomunikasi Terusan Buah Batu Indonesia 40257 , Bandung , Indonesia (022) 7564 108 info@telkomuniversity.ac.id</string>
+    <string name="title_activity_beranda_new">BerandaNew</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_bantuan">Bantuan</string>
+
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.i_kampus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".database.DbKuesioner"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_100dp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme">
+        <activity android:name=".homeUser.menuKuesioner.HasilPsikologi"></activity>
+        <activity android:name=".homeUser.menuKuesioner.KuesionerPenjurusan" />
+        <activity android:name=".homeUser.menuUtama.LatihanSoal.LatihanSoal" />
+        <activity android:name=".homeUser.menuKuesioner.KuesionerPsikologi" />
+        <activity android:name=".homeUser.menuUtama.UKM.UnpadUKM" />
+        <activity android:name=".homeUser.menuUtama.ProgramStudi.UnpadProgramStudi" />
+        <activity android:name=".homeUser.menuUtama.Presentase.UnpadPresentase" />
+        <activity android:name=".homeUser.menuUtama.Kampus.UnpadKampus" />
+        <activity android:name=".homeUser.menuUtama.Beasiswa.UnpadBeasiswa" />
+        <activity android:name=".homeUser.menuUtama.UnpadBeranda" />
+        <activity android:name=".homeUser.menuKuesioner.HasilPenjurusan" />
+        <activity android:name=".homeUser.menuUtama.LatihanSoal.ResultActivity" />
+        <activity android:name=".homeUser.menuUtama.UbahGambarProfil" />
+        <activity android:name=".homeUser.menuUtama.DialogMilzamActivity" />
+        <activity android:name=".homeUser.menuUtama.DialogPutriActivity" />
+        <activity android:name=".homeUser.menuUtama.DialogRichoActivity" />
+        <activity android:name=".homeAdmin.AdminLoginActivity" />
+        <activity
+            android:name=".homeUser.menuUtama.Bantuan"
+            android:label="@string/title_activity_bantuan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".homeUser.menuUtama.AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".homeUser.menuUtama.BerandaNew"
+            android:label="@string/title_activity_beranda_new"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".homeUser.menuUtama.EditProfil" />
+        <activity android:name=".homeUser.menuUtama.Profil" />
+        <activity android:name=".homeUser.menuKuesioner.MulaiKuesionerPsikologi" />
+        <activity android:name=".homeUser.menuKuesioner.MulaiKuesionerPenjurusan" />
+        <activity android:name=".homeAdmin.InputKampus" />
+        <activity android:name=".homeUser.menuKuesioner.KategoriKuesioner" />
+        <activity android:name=".homeUser.menuUtama.Presentase.Presentase" />
+        <activity android:name=".homeUser.menuUtama.UKM.UKM" />
+        <activity android:name=".homeUser.menuUtama.ProgramStudi.PorgramStudi" />
+        <activity android:name=".homeUser.Awal.Kategori" />
+        <activity android:name=".homeUser.menuUtama.Kampus.Kampus" />
+        <activity android:name=".homeUser.menuUtama.Beasiswa.Beasiswa" />
+        <activity android:name=".homeUser.menuUtama.PencarianKampus" />
+        <activity android:name=".homeUser.Awal.ForgotPassword" />
+        <activity android:name=".homeUser.Awal.VerifikasiActivity" /> <!-- <meta-data -->
+        <!-- android:name="com.facebook.sdk.ApplicationId" -->
+        <!-- android:value="@string/facebook_app_id" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="preloaded_fonts" -->
+        <!-- android:resource="@array/preloaded_fonts" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.facebook.FacebookActivity" -->
+        <!-- android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" -->
+        <!-- android:label="@string/app_name" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.facebook.CustomTabActivity" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+        <!-- <data android:scheme="@string/fb_login_protocol_scheme" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity android:name=".homeUser.Awal.Register" />
+        <activity android:name=".homeUser.Awal.Login" />
+        <activity android:name=".model.Walkthrought" />
+        <activity android:name=".model.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

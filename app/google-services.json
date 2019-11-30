@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "225886084818",
+    "firebase_url": "https://i-kampus.firebaseio.com",
+    "project_id": "i-kampus",
+    "storage_bucket": "i-kampus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225886084818:android:9b81a398292ed1f2",
+        "android_client_info": {
+          "package_name": "com.example.i_kampus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225886084818-fahsvk2ki7mqqki77b39g6sjt6fe9lvi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.i_kampus",
+            "certificate_hash": "73d2c02c40672e475ffd50383d7adf18be61e910"
+          }
+        },
+        {
+          "client_id": "225886084818-se8lou4tgnmp7t1u16b8pa7s8vrdgrbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfksVvewGi7pRSSw4Z2V5WGzbNW4c_A_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225886084818-se8lou4tgnmp7t1u16b8pa7s8vrdgrbg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
